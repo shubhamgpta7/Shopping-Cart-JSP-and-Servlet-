@@ -1,3 +1,4 @@
+<%@page import="com.shubham.conncetion.DBcon"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
@@ -8,6 +9,7 @@
 </head>
 <body>
 	<%@include file="includes/navbar.jsp"%>
+	<% out.print(DBcon.getConnection()); %>
 
 
 	<%@include file="includes/footer.jsp"%>
